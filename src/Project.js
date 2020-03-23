@@ -56,12 +56,15 @@ function Project(props){
 
         .projectDescription {
           opacity: 0;
+          display: none;
         }
 
         .${'projectHighlight_' + props.id}:hover > .projectDescription {
           z-index: 1;
           color: rgba(0, 0, 0, 0.00);
           // opacity: 0;
+          display: block; 
+
           padding-top: 10px;
           padding-bottom: 10px;
           border-bottom-left-radius: 1vw;
