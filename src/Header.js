@@ -20,8 +20,8 @@ function Header(){
           .Header-body {
             overflow: auto;
             background-color: rgba${imageArray[imageNumber]};
-            border-bottom-left-radius:  10vw;
-            border-bottom-right-radius: 10vw;
+            border-bottom-left-radius:  5vw;
+            border-bottom-right-radius: 5vw;
             animation: header_fade_effect 60s infinite;
           }
 

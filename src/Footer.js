@@ -14,8 +14,8 @@ function Footer(){
           .Footer-body {
             overflow: auto;
             background-color: rgba${imageArray[imageNumber]};
-            border-top-left-radius:  10vw;
-            border-top-right-radius: 10vw;
+            border-top-left-radius:  5vw;
+            border-top-right-radius: 5vw;
             animation: footer_fade_effect 60s infinite;
           }
 
