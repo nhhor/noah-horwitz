@@ -53,6 +53,7 @@ function App() {
 
           .App-Footer {
             width: 100vw;
+            height: 100%;
             overflow: hidden;
           }
 

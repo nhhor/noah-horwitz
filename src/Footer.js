@@ -3,19 +3,20 @@ import React from 'react';
 
 function Footer(){
 
-  let imageArray = ['(51, 17, 17, .10)', '(51, 45, 17, .10)', '(19, 14, 35, .10)', '(14, 41, 14, .10)'];
+  let imageArray = ['51, 17, 17', '51, 45, 17', '19, 14, 35', '14, 41, 14'];
   let imageNumber = (Math.round(Math.random()*3));
 
   return (
 
       <div className="Footer-body">
-        <div className='Header-padding'>Hi</div>
+        <div className='Header-padding'>© Noah Horwitz</div>
       <style>{`
           .Footer-body {
-            overflow: auto;
-            background-color: rgba${imageArray[imageNumber]};
+            background: rgba${imageArray[imageNumber]};
+            background: linear-gradient(180deg, rgba(${imageArray[imageNumber]+',.03'}) 0%, rgba(${imageArray[imageNumber]+',.33'}) 23%, rgba(${imageArray[imageNumber]+',.33'}) 100%);
             border-top-left-radius:  5vw;
             border-top-right-radius: 5vw;
+            height: 100%;
             animation: footer_fade_effect 60s infinite;
           }
 

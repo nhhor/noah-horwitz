@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header(){
 
-  let imageArray = ['(51, 17, 17, .10)', '(51, 45, 17, .10)', '(19, 14, 35, .10)', '(14, 41, 14, .10)'];
+  let imageArray = ['51, 17, 17', '51, 45, 17', '19, 14, 35', '14, 41, 14'];
   let imageNumber = (Math.round(Math.random()*3));
 
   return (
@@ -11,15 +11,15 @@ function Header(){
     <div className="Header-body">
 
       <div className="Header-padding"></div>
-      <div className="">Noah Horwitz</div>
-      <div className=""><Link to="/">Home</Link> | <Link to="/portfolio">Portfolio</Link></div>
+      <div className="name">Noah Horwitz</div>
+      <div className="name"><Link to="/">Home</Link> | <Link to="/portfolio">Portfolio</Link></div>
       <div className="Header-padding"></div>
 
       <style>{`
 
           .Header-body {
-            // overflow: auto;
-            background-color: rgba${imageArray[imageNumber]};
+            background: rgba${imageArray[imageNumber]};
+            background: linear-gradient(180deg, rgba(${imageArray[imageNumber]+',.33'}) 0%, rgba(${imageArray[imageNumber]+',.33'}) 66%, rgba(${imageArray[imageNumber]+',.03'}) 100%);
             border-bottom-left-radius:  5vw;
             border-bottom-right-radius: 5vw;
             height: 100%;
@@ -28,6 +28,10 @@ function Header(){
 
           .Header-padding {
             padding: 7px;
+          }
+
+          .name {
+            font-weight: bolder;
           }
 
           @keyframes header_fade_effect {
