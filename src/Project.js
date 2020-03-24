@@ -11,14 +11,14 @@ function Project(props){
       <div className={'projectHighlight_' + props.id}>
         <div className={'projectName_' + props.id + ' projectName'}>{props.name}</div>
         <div className={'projectPicPreview_' + props.id}></div>
-        <div className='projectDescription'>{props.description}x</div>
+        <div className='projectDescription'>{props.description}</div>
       </div>
       <div></div>
       <div></div>
       <div className='projectTechnologiesUsed'>Technologies Used: {props.technologiesUsed}</div>
       <div className='projectLinkGitHub'><a href={props.linkGitHub}>GitHub</a></div>
       <div className='projectLinkDeployed'><a href={props.linkDeployed}>Deployed?</a></div>
-      <div className='projectModifiedLast'>{props.modifiedLast}</div>
+      <div className='projectModifiedLast'></div>
       </div>
 
       <style>{`
@@ -130,7 +130,7 @@ function Project(props){
         }
 
         .projectModifiedLast {
-          background-color: rgba(0,255,0,0.33);
+          background-color: rgba(${imageArray[imageNumber]+',.33'})
           border-bottom-right-radius: 1vw;
           border-bottom-left-radius: 1vw;
         }
