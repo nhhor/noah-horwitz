@@ -7,47 +7,35 @@ function Home(){
   let imageNumber = (Math.round(Math.random()*3));
 
   return (
-    <div className='Home-body'>
+    <div className='Home-index'>
 
-
-      <h1 className=''>Hello! My name is Noah Horwitz and I'm a full-stack developer.</h1>
-
-<div>
-<h2>Navigation:</h2>
-</div>
-
+      <h1>Hello! My name is Noah Horwitz and I'm a full-stack developer.</h1>
+      <h2>Navigation:</h2>
 
       <style>{`
-      .Home-body {
-        background: rgba${imageArray[imageNumber]};
-        background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba${imageArray[imageNumber]} 1%, rgba${imageArray[imageNumber]} 99%, rgba(255,0,0,0.33) 100%);
-        border-radius: 5vw;
-        overflow: auto;
-        height: 100%;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        animation: div_animation_effect 2s 1;
-      }
+          .Home-index {
 
-      @keyframes div_animation_effect {
-              0%   { opacity: 1; transform:matrix(0.01,-0.30,0.33,0.01,${((imageNumber+1)*300)},-${((imageNumber+1)*300)});}
-              45%   { opacity: 1; transform:matrix(1.00,0.00,0.00,1.00,${((imageNumber+1)*33)},${((imageNumber+1)*33)});}
-              100% { opacity: 1;}
-      }
+            background: rgba${imageArray[imageNumber]};
+            background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba${imageArray[imageNumber]} 1%, rgba${imageArray[imageNumber]} 99%, rgba(255,0,0,0.33) 100%);
+            border-radius: 5%;
+            padding: 2vh;
+            min-height: 86vh;
+            animation: div_animation_effect 2s 1;
+          }
 
+          @keyframes div_animation_effect {
+            0%   { opacity: 1; transform:matrix(0.01,-0.30,0.33,0.01,${((imageNumber+1)*300)},-${((imageNumber+1)*300)});}
+            45%   { opacity: 1; transform:matrix(1.00,0.00,0.00,1.00,${((imageNumber+1)*33)},${((imageNumber+1)*33)});}
+            100% { opacity: 1;}
+          }
 
+          `}</style>
 
-      `}</style>
-
-
-
-
-
-    </div>
-  );
-}
+      </div>
+    );
+  }
 
 
 
 
-export default Home;
+  export default Home;

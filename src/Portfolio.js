@@ -32,7 +32,7 @@ class Portfolio extends React.Component {
       {
         id: 2,
         name: 'Code Invaders',
-        description: 'The project is designed to help users practice typing code through an interactive space-themed game. [Team project]',
+        description: 'Game designed to practice typing common code elements through an interactive space-themed setting. [Team project]',
         picPreview: 'codeInvedersPreview.png',
         picHover: 'codeInvedersHover.png',
         technologiesUsed: ['JavaScript', 'CSS Animations'],
@@ -54,7 +54,7 @@ class Portfolio extends React.Component {
       {
         id: 4,
         name: 'Pandemic',
-        description: 'The project is designed to create a game that resembles some of the aspects of the popular board game, Pandemic.',
+        description: 'A timed game that resembles some of the aspects of the popular board game, Pandemic.',
         picPreview: 'pandemicPreview.png',
         picHover: 'pandemicHover.png',
         technologiesUsed: 'JavaScript',
@@ -67,14 +67,13 @@ class Portfolio extends React.Component {
 
   }
 
-
-
   render() {
-    let imageArray = ['(51, 17, 17, .10)', '(51, 45, 17, .10)', '(19, 14, 35, .10)', '(14, 41, 14, .10)'];
+    let imageArray = ['(51, 17, 17, .01)', '(51, 45, 17, .01)', '(19, 14, 35, .01)', '(14, 41, 14, .01)'];
     let imageNumber = (Math.round(Math.random()*3));
 
     return (
       <div className='Portfolio-body'>
+
         <h1 className=''>Portfolio</h1>
 
         <div className='Portfolio-list'>
@@ -94,28 +93,22 @@ class Portfolio extends React.Component {
 
         </div>
 
-        <br/><br/><br/>
 
         <style>{`
+            .Portfolio-body {
+              background: rgba${imageArray[imageNumber]};
+              background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba${imageArray[imageNumber]} 1%, rgba${imageArray[imageNumber]} 99%, rgba(255,0,0,0.33) 100%);
+              border-radius: 5%;
+              padding: 2vh;
+              min-height: 86vh;
+              animation: div_animation_effect 2s 1;
+            }
+
             .Portfolio-list {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-around;
               align-content: space-between;
-            }
-
-
-
-            .Portfolio-body {
-              background: rgba${imageArray[imageNumber]};
-              background: linear-gradient(180deg, rgba(0,255,0,0.33) 0%, rgba${imageArray[imageNumber]} 1%, rgba${imageArray[imageNumber]} 99%, rgba(255,0,0,0.33) 100%);
-              border-radius: 5vw;
-              overflow: auto;
-              height: 100%;
-              // width: 80%;
-              padding-left: 5%;
-              padding-right: 5%;
-              animation: div_animation_effect 2s 1;
             }
 
             @keyframes div_animation_effect {
@@ -124,13 +117,7 @@ class Portfolio extends React.Component {
               100% { opacity: 1;}
             }
 
-
-
             `}</style>
-
-
-
-
 
         </div>
       );

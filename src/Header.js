@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Header(){
 
-  let imageArray = ['(51, 17, 17, .33)', '(51, 45, 17, .33)', '(19, 14, 35, .33)', '(14, 41, 14, .33)'];
+  let imageArray = ['(51, 17, 17, .10)', '(51, 45, 17, .10)', '(19, 14, 35, .10)', '(14, 41, 14, .10)'];
   let imageNumber = (Math.round(Math.random()*3));
 
   return (
@@ -18,15 +18,16 @@ function Header(){
       <style>{`
 
           .Header-body {
-            overflow: auto;
+            // overflow: auto;
             background-color: rgba${imageArray[imageNumber]};
             border-bottom-left-radius:  5vw;
             border-bottom-right-radius: 5vw;
+            height: 100%;
             animation: header_fade_effect 60s infinite;
           }
 
           .Header-padding {
-            padding: 10px;
+            padding: 7px;
           }
 
           @keyframes header_fade_effect {

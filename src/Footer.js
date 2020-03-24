@@ -3,13 +3,13 @@ import React from 'react';
 
 function Footer(){
 
-  let imageArray = ['(51, 17, 17, .33)', '(51, 45, 17, .33)', '(19, 14, 35, .33)', '(14, 41, 14, .33)'];
+  let imageArray = ['(51, 17, 17, .10)', '(51, 45, 17, .10)', '(19, 14, 35, .10)', '(14, 41, 14, .10)'];
   let imageNumber = (Math.round(Math.random()*3));
 
   return (
 
       <div className="Footer-body">
-        <p>Hi</p>
+        <div className='Header-padding'>Hi</div>
       <style>{`
           .Footer-body {
             overflow: auto;
@@ -17,6 +17,10 @@ function Footer(){
             border-top-left-radius:  5vw;
             border-top-right-radius: 5vw;
             animation: footer_fade_effect 60s infinite;
+          }
+
+          .Header-padding {
+            padding: 4px;
           }
 
           @keyframes footer_fade_effect {

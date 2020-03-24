@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Header from './Header';
@@ -32,7 +31,7 @@ function App() {
           .App {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 80px 1fr 40px;
+            grid-template-rows: 7% 1fr 3%;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             width: 100vw;
@@ -42,12 +41,14 @@ function App() {
 
           .App-Header {
             width: 100vw;
+            height: 100%;
             overflow: hidden;
           }
 
           .App-Body {
             width: 100vw;
-            overflow: hidden;
+            height: 100%;
+            overflow-x: hidden;
           }
 
           .App-Footer {
