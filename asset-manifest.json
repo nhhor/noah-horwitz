@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/noah-horwitz/static/css/main.9088d9cf.chunk.css",
+    "main.js": "/noah-horwitz/static/js/main.53c4dbf6.chunk.js",
+    "main.js.map": "/noah-horwitz/static/js/main.53c4dbf6.chunk.js.map",
+    "runtime-main.js": "/noah-horwitz/static/js/runtime-main.1be5dc2d.js",
+    "runtime-main.js.map": "/noah-horwitz/static/js/runtime-main.1be5dc2d.js.map",
+    "static/js/2.4eb370b6.chunk.js": "/noah-horwitz/static/js/2.4eb370b6.chunk.js",
+    "static/js/2.4eb370b6.chunk.js.map": "/noah-horwitz/static/js/2.4eb370b6.chunk.js.map",
+    "index.html": "/noah-horwitz/index.html",
+    "precache-manifest.b7fa921d0a9477d2eeae215a940cf8e6.js": "/noah-horwitz/precache-manifest.b7fa921d0a9477d2eeae215a940cf8e6.js",
+    "service-worker.js": "/noah-horwitz/service-worker.js",
+    "static/css/main.9088d9cf.chunk.css.map": "/noah-horwitz/static/css/main.9088d9cf.chunk.css.map",
+    "static/js/2.4eb370b6.chunk.js.LICENSE.txt": "/noah-horwitz/static/js/2.4eb370b6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1be5dc2d.js",
+    "static/js/2.4eb370b6.chunk.js",
+    "static/css/main.9088d9cf.chunk.css",
+    "static/js/main.53c4dbf6.chunk.js"
+  ]
+}
