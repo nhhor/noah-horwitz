@@ -16,12 +16,25 @@ function Project(props){
         <div></div>
         <div></div>
         <div className='projectTechnologiesUsed'>Technologies Used: {props.technologiesUsed}</div>
-        <div className='projectLinkGitHub'><a href={props.linkGitHub}>GitHub Repository</a></div>
-        <div className='projectLinkDeployed'><a href={props.linkDeployed}>Deployed?</a></div>
+        <div className='projectLinkGitHub'>
+          <a className='projectPill' href={props.linkGitHub}>GitHub Repository</a>
+          <a className='projectPill' href={props.linkDeployed}>Deployed</a>
+        </div>
         <div className='projectModifiedLast'></div>
       </div>
 
       <style>{`
+          .projectPill {
+            background: rgba${imageArray[imageNumber]};
+            background: linear-gradient(90deg, rgba(${imageArray[imageNumber]+',.33'}) 0%, rgba(${imageArray[imageNumber]+',.33'}) 66%, rgba(${imageArray[imageNumber]+',.33'}) 100%);
+            // padding-left: 10px;
+            padding: 5px 10px;
+            margin: 0px 3%;
+            border-radius: 5px;
+            font-size: 0.8em;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .99);
+          }
+
           .Portfolio-list-item {
             flex: 1 1 400px;
             max-width: 600px;
@@ -32,7 +45,7 @@ function Project(props){
           .Portfolio-project {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 50px 200px 0px repeat(4, 25px);
+            grid-template-rows: 50px 200px 0px repeat(3, 25px);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
@@ -89,7 +102,7 @@ function Project(props){
             font-weight: bolder;
             border-top-right-radius: 1vw;
             border-top-left-radius: 1vw;
-            background-color: rgba(0,0,255,0.99);
+            background-color: rgba(64,64,255,0.99);
             overflow: hidden;
             animation: projectName_animation_effect ${(props.id+1)}s 2;
           }
@@ -116,15 +129,15 @@ function Project(props){
           }
 
           .projectTechnologiesUsed {
-            background-color: rgba(0,255,0,0.33);
+            // background-color: rgba(0,255,0,0.33);
           }
 
           .projectLinkGitHub {
-            background-color: rgba(0,255,0,0.99);
+            // background-color: rgba(0,255,0,0.99);
           }
 
           .projectLinkDeployed {
-            background-color: rgba(0,255,0,0.99);
+            // background-color: rgba(0,255,0,0.99);
 
           }
 

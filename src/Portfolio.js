@@ -13,7 +13,7 @@ class Portfolio extends React.Component {
         description: "A web-app that securely & seamlessly connects with your Google Contacts, allows a user to set a desired frequency which they wish to communicate with a contact, then a user can log their most recent interaction, and sort the user's contacts by priority since last interaction.",
         picPreview: 'prioritactsPreview.png',
         picHover: 'https://raw.githubusercontent.com/nhhor/prioritacts/master/public/appExample.gif',
-        technologiesUsed: ['React', 'Redux'],
+        technologiesUsed: ['React', 'Redux', 'OAuth', 'JavaScript'],
         modifiedLast: '2020-03-20',
         linkGitHub: 'https://github.com/nhhor/prioritacts',
         linkDeployed: 'https://prioritacts.netlify.com/',
@@ -24,7 +24,7 @@ class Portfolio extends React.Component {
         description: "The project is designed to allow neighbors within a community (as defined by a radius within a user's home zip-code area) to host or join events in their immediate area. [Team project]",
         picPreview: 'neighborlyPreview.png',
         picHover: 'neighborlyHover.png',
-        technologiesUsed: ['Ruby', 'Rails'],
+        technologiesUsed: ['Ruby', 'Rails', 'SQL'],
         modifiedLast: '2020-02-20',
         linkGitHub: 'https://github.com/nhhor/neighborly',
         linkDeployed: 'https://team-neighborly.herokuapp.com/',
@@ -46,7 +46,7 @@ class Portfolio extends React.Component {
         description: 'The project is designed to create a tap room app in React where a bar or kombucha store can track their kegs.',
         picPreview: 'reactTapRoomPreview.png',
         picHover: 'reactTapRoomHover.png',
-        technologiesUsed: 'React',
+        technologiesUsed: ['React', 'DOM manipulation'],
         modifiedLast: '2020-03-20',
         linkGitHub: 'https://github.com/nhhor/react-tap-room',
         linkDeployed: 'https://nhhor.github.io/react-tap-room/index.html',
@@ -64,11 +64,10 @@ class Portfolio extends React.Component {
       },],
       projectFocus: null
     };
-
   }
 
   render() {
-    let imageArray = ['(51, 17, 17, .01)', '(51, 45, 17, .01)', '(19, 14, 35, .01)', '(14, 41, 14, .01)'];
+    let imageArray = ['51, 17, 17', '51, 45, 17', '19, 14, 35', '14, 41, 14'];
     let imageNumber = (Math.round(Math.random()*3));
 
     return (
@@ -93,11 +92,10 @@ class Portfolio extends React.Component {
 
         </div>
 
-
         <style>{`
             .Portfolio-body {
-              background: rgba${imageArray[imageNumber]};
-              background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba${imageArray[imageNumber]} 1%, rgba${imageArray[imageNumber]} 99%, rgba(255,0,0,0.33) 100%);
+              background: rgba(${imageArray[imageNumber]+',.03'});
+              background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.03'}) 1%, rgba(${imageArray[imageNumber]+',.03'}) 99%, rgba(255,0,0,0.33) 100%);
               border-radius: 5%;
               padding: 2vh;
               min-height: 86vh;
@@ -123,7 +121,5 @@ class Portfolio extends React.Component {
       );
     }
   }
-
-
 
   export default Portfolio;
