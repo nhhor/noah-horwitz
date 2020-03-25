@@ -45,6 +45,16 @@ function Home(){
 
           <h4>{`I'm analytical, I love creating, and I have a craving to know more. I'm intrigued with the unique qualities of each person and I recognize and appreciate what I can learn from them.`}</h4>
         </div>
+
+        <div className='contact'>
+          <h3>Contact Me:</h3>
+          <h4><a href='mailto:nhhor@post.com'>E-mail</a></h4>
+          <h4><a href='https://www.LinkedIn.com/in/noah-horwitz'>LinkedIn</a></h4>
+          <h4><a href='https://GitHub.com/nhhor'>GitHub</a></h4>
+        </div>
+
+
+
       </div>
 
 
@@ -60,7 +70,7 @@ function Home(){
 
 
           .who {
-            flex: 1 1 400px;
+            flex: 1 1 500px;
             max-width: 600px;
             border-radius: 1vw;
             margin: 1%;
@@ -88,6 +98,17 @@ function Home(){
           }
 
           .where {
+            flex: 1 1 400px;
+            max-width: 600px;
+            border-radius: 1vw;
+            margin: 1%;
+            padding: 10px;
+            border-radius: 1vw;
+            background-color: rgba(${imageArray[imageNumber]+',.09'});
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+          }
+
+          .contact {
             flex: 1 1 400px;
             max-width: 600px;
             border-radius: 1vw;

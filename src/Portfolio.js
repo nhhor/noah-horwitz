@@ -90,9 +90,26 @@ class Portfolio extends React.Component {
               key={project.id}/>
           )}
 
+          <div className='contact'>
+            <h3>Contact Me:</h3>
+            <h4><a href='mailto:nhhor@post.com'>E-mail</a></h4>
+            <h4><a href='https://www.LinkedIn.com/in/noah-horwitz'>LinkedIn</a></h4>
+            <h4><a href='https://GitHub.com/nhhor'>GitHub</a></h4>
+          </div>
+
         </div>
 
         <style>{`
+
+          .contact {
+            flex: 1 1 400px;
+            max-width: 600px;
+            border-radius: 1vw;
+            margin: 1%;
+            background-color: rgba(${imageArray[imageNumber]+',.33'});
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+          }
+
             .Portfolio-body {
               background: rgba(${imageArray[imageNumber]+',.03'});
               background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.03'}) 1%, rgba(${imageArray[imageNumber]+',.03'}) 99%, rgba(255,0,0,0.33) 100%);

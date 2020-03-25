@@ -115,12 +115,31 @@ function Resume(){
     <div className='projects'>
       <h3 className='h3Section'>PROJECTS</h3>
         <h4><Link to="/portfolio">Portfolio</Link></h4>
-
     </div>
+
+    <div className='contact'>
+      <h3 className='h3Section'>Contact Me:</h3>
+      <h4><a href='mailto:nhhor@post.com'>E-mail</a></h4>
+      <h4><a href='https://www.LinkedIn.com/in/noah-horwitz'>LinkedIn</a></h4>
+      <h4><a href='https://GitHub.com/nhhor'>GitHub</a></h4>
+    </div>
+
+
 
     </div>
 
     <style>{`
+      .contact {
+        flex: 1 1 400px;
+        max-width: 600px;
+        border-radius: 1vw;
+        margin: 1%;
+        padding: 10px;
+        border-radius: 1vw;
+        background-color: rgba(${imageArray[imageNumber]+',.09'});
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+      }
+
       .h3Section {
         color: green;
       }
