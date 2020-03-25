@@ -20,17 +20,17 @@ function Home(){
         <div className='what'>
           <h3>What I know today:</h3>
           <ul>
-            <li><img className='icon' src='icon_JavaScript.png'/>JavaScript</li>
+            <li><img className='icon' src='icon_JavaScript.png' alt='JavaScript Icon'/>JavaScript</li>
             <ul>
-              <li><img className='icon' src='icon_React.png'/>React</li>
-              <li><img className='icon' src='icon_Redux.png'/>Redux</li>
-              <li><img className='icon' src='icon_jQuery.png'/>jQuery</li>
+              <li><img className='icon' src='icon_React.png' alt='React Icon'/>React</li>
+              <li><img className='icon' src='icon_Redux.png' alt='Redux Icon'/>Redux</li>
+              <li><img className='icon' src='icon_jQuery.png' alt='jQuery Icon'/>jQuery</li>
             </ul>
-            <li><img className='icon' src='icon_Ruby.png'/>Ruby</li>
+            <li><img className='icon' src='icon_Ruby.png' alt='Ruby Icon'/>Ruby</li>
             <ul>
-              <li><img className='icon' src='icon_Rails.png'/>Rails</li>
+              <li><img className='icon' src='icon_Rails.png' alt='Rails Icon'/>Rails</li>
             </ul>
-            <li><img className='icon' src='icon_PostgreSQL.png'/>pSQL</li>
+            <li><img className='icon' src='icon_PostgreSQL.png' alt='pSQL Icon'/>pSQL</li>
           </ul>
           <h3>What I hope to learn next:</h3>
             <ul>
