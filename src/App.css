@@ -1,9 +1,11 @@
 html,body {
     height:100%;
+    background-color: hsla(360, 100%, 75%, 0.03);
 }
 
 .App {
   text-align: center;
+  color: rgba(20, 20, 27, .90);
 }
 
 .App-logo {

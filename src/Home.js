@@ -132,8 +132,8 @@ function Home(){
           }
 
           .Home-index {
-            background: rgba(${imageArray[imageNumber]+',.03'});
-            background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.03'}) 1%, rgba(${imageArray[imageNumber]+',.03'}) 99%, rgba(255,0,0,0.33) 100%);
+            background: rgba(${imageArray[imageNumber]+',.0'});
+            background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.0'}) 1%, rgba(${imageArray[imageNumber]+',.0'}) 99%, rgba(255,0,0,0.33) 100%);
             border-radius: 5%;
             padding: 2vh;
             min-height: 86vh;

@@ -130,8 +130,8 @@ function Resume(){
 
     <style>{`
       .contact {
-        flex: 1 1 400px;
-        max-width: 600px;
+        flex: 1 1 300px;
+        // max-width: 600px;
         border-radius: 1vw;
         margin: 1%;
         padding: 10px;
@@ -152,8 +152,8 @@ function Resume(){
 
 
       .summary {
-        flex: 1 1 500px;
-        max-width: 600px;
+        flex: 1 1 300px;
+        // max-width: 600px;
         border-radius: 1vw;
         margin: 1%;
         padding: 10px;
@@ -163,8 +163,8 @@ function Resume(){
       }
 
       .skills {
-        flex: 1 1 400px;
-        max-width: 600px;
+        flex: 1 1 300px;
+        // max-width: 600px;
         border-radius: 1vw;
         margin: 1%;
         padding: 10px;
@@ -180,8 +180,8 @@ function Resume(){
       }
 
       .experience {
-        flex: 1 1 400px;
-        max-width: 600px;
+        flex: 4 1 400px;
+        min-width: 47%;
         border-radius: 1vw;
         margin: 1%;
         padding: 10px;
@@ -197,8 +197,8 @@ function Resume(){
       }
 
       .education {
-        flex: 1 1 400px;
-        max-width: 600px;
+        flex: 4 1 400px;
+        min-width: 47%;
         border-radius: 1vw;
         margin: 1%;
         padding: 10px;
@@ -214,8 +214,8 @@ function Resume(){
       }
 
       .projects {
-        flex: 1 1 400px;
-        max-width: 600px;
+        flex: 1 1 300px;
+        // max-width: 600px;
         border-radius: 1vw;
         margin: 1%;
         padding: 10px;
@@ -233,6 +233,7 @@ function Resume(){
       .theTable {
         display: flex;
         flex-wrap: wrap;
+        // align-items: flex-start;
         justify-content: space-around;
         align-content: space-between;
         padding: 0px 20px;
@@ -243,8 +244,8 @@ function Resume(){
       }
 
       .Resume-index {
-        background: rgba(${imageArray[imageNumber]+',.03'});
-        background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.03'}) 1%, rgba(${imageArray[imageNumber]+',.03'}) 99%, rgba(255,0,0,0.33) 100%);
+        background: rgba(${imageArray[imageNumber]+',.0'});
+        background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.0'}) 1%, rgba(${imageArray[imageNumber]+',.0'}) 99%, rgba(255,0,0,0.33) 100%);
         border-radius: 5%;
         padding: 2vh;
         min-height: 86vh;

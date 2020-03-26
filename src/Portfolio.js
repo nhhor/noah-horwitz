@@ -91,7 +91,7 @@ class Portfolio extends React.Component {
           )}
 
           <div className='contact'>
-            <h3>Contact Me:</h3>
+            <h3 className='projectName'>Contact Me:</h3>
             <h4><a href='mailto:nhhor@post.com'>E-mail</a></h4>
             <h4><a href='https://www.LinkedIn.com/in/noah-horwitz'>LinkedIn</a></h4>
             <h4><a href='https://GitHub.com/nhhor'>GitHub</a></h4>
@@ -100,6 +100,19 @@ class Portfolio extends React.Component {
         </div>
 
         <style>{`
+            .projectName{
+              padding: 10px;
+              margin: 0px;
+
+              font-weight: bolder;
+              border-top-right-radius: 1vw;
+              border-top-left-radius: 1vw;
+              background-color: rgba(64,64,255,0.99);
+              overflow: hidden;
+              animation: projectName_animation_effect 2s 2;
+            }
+
+
 
           .contact {
             flex: 1 1 400px;
@@ -111,8 +124,8 @@ class Portfolio extends React.Component {
           }
 
             .Portfolio-body {
-              background: rgba(${imageArray[imageNumber]+',.03'});
-              background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.03'}) 1%, rgba(${imageArray[imageNumber]+',.03'}) 99%, rgba(255,0,0,0.33) 100%);
+              background: rgba(${imageArray[imageNumber]+',.00'});
+              background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.00'}) 1%, rgba(${imageArray[imageNumber]+',.00'}) 99%, rgba(255,0,0,0.33) 100%);
               border-radius: 5%;
               padding: 2vh;
               min-height: 86vh;
