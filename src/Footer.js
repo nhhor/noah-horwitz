@@ -17,6 +17,8 @@ function Footer(){
             border-top-left-radius:  5vw;
             border-top-right-radius: 5vw;
             height: 100%;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, .33);
+
             animation: footer_fade_effect 60s infinite;
           }
 

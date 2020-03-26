@@ -19,9 +19,11 @@ function Header(){
 
           .Header-body {
             background: rgba${imageArray[imageNumber]};
-            background: linear-gradient(180deg, rgba(${imageArray[imageNumber]+',.33'}) 0%, rgba(${imageArray[imageNumber]+',.33'}) 66%, rgba(${imageArray[imageNumber]+',.03'}) 100%);
+            background: linear-gradient(180deg, rgba(${imageArray[imageNumber]+',.09'}) 0%, rgba(${imageArray[imageNumber]+',.09'}) 66%, rgba(${imageArray[imageNumber]+',.03'}) 100%);
             border-bottom-left-radius:  5vw;
             border-bottom-right-radius: 5vw;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, .33);
+
             height: 100%;
             animation: header_fade_effect 60s infinite;
           }

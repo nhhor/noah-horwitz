@@ -70,8 +70,8 @@ function Home(){
 
 
           .who {
-            flex: 1 1 500px;
-            max-width: 600px;
+            flex: 1 1 400px;
+            // max-width: 600px;
             border-radius: 1vw;
             margin: 1%;
             padding: 10px;
@@ -81,8 +81,8 @@ function Home(){
           }
 
           .what {
-            flex: 1 1 400px;
-            max-width: 600px;
+            flex: 2 1 400px;
+            // max-width: 400px;
             border-radius: 1vw;
             margin: 1%;
             padding: 10px;
@@ -99,7 +99,7 @@ function Home(){
 
           .where {
             flex: 1 1 400px;
-            max-width: 600px;
+            // max-width: 600px;
             border-radius: 1vw;
             margin: 1%;
             padding: 10px;
@@ -109,8 +109,8 @@ function Home(){
           }
 
           .contact {
-            flex: 1 1 400px;
-            max-width: 600px;
+            flex: 2 1 400px;
+            max-width: 100%;
             border-radius: 1vw;
             margin: 1%;
             padding: 10px;
