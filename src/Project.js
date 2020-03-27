@@ -69,8 +69,8 @@ function Project(props){
 
           @keyframes projectPicPreview_animation_effect {
             0%   { opacity: .1;}
-            5%   { display: block; position: absolute; top: 30%; right: 25vw; height: 50vh; width: 50vw; opacity: 1; box-shadow: 0px 25px 100px rgba(0, 0, 0, .99); background-color: rgba(${imageArray[imageNumber]+',.97'})}
-            95%  { display: block; position: absolute; top: 30%; right: 25vw; height: 50vh; width: 50vw; opacity: 1; box-shadow: 0px 25px 100px rgba(0, 0, 0, .99); background-color: rgba(${imageArray[imageNumber]+',.97'})}
+            5%   { display: block; position: absolute; top: 30%; right: 25vw; height: 50vh; width: 50vw; opacity: 1; box-shadow: 0px 0px 200px rgba(0, 0, 0, .99); background-color: rgba(${imageArray[imageNumber]+',.97'})}
+            95%  { display: block; position: absolute; top: 30%; right: 25vw; height: 50vh; width: 50vw; opacity: 1; box-shadow: 0px 0px 200px rgba(0, 0, 0, .99); background-color: rgba(${imageArray[imageNumber]+',.97'})}
             100% { opacity: 1;}
           }
 
@@ -91,10 +91,10 @@ function Project(props){
           }
 
           @keyframes projectDescription_animation_effect {
-            0%   { opacity: 1; color: rgba(255, 255, 255, 1);}
-            5%   { opacity: 1; display: block; position: absolute; top: 80vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); box-shadow: 0px 25px 100px rgba(0, 0, 0, .99); color: rgba(255, 255, 255, 1); width: 48vw; height: 99px;}
-            95%  { opacity: 1; display: block; position: absolute; top: 80vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); box-shadow: 0px 25px 100px rgba(0, 0, 0, .99); color: rgba(255, 255, 255, 1); width: 48vw; height: 99px;}
-            100% { opacity: 1; color: rgba(0, 0, 0, 0.00);}
+            0%   { opacity: 1; color: rgba(255, 255, 255, 1); z-index: 4;}
+            5%   { opacity: 1; display: block; position: absolute; top: 80vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); color: rgba(255, 255, 255, 1); width: 48vw; height: 99px; z-index: 4;}
+            95%  { opacity: 1; display: block; position: absolute; top: 80vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); color: rgba(255, 255, 255, 1); width: 48vw; height: 99px; z-index: 4;}
+            100% { opacity: 1; color: rgba(0, 0, 0, 0.00); z-index: 4;}
           }
 
           .${'projectName_' + props.id} {
@@ -122,10 +122,10 @@ function Project(props){
           }
 
           @keyframes projectNameHover_animation_effect {
-            0%   { opacity: 1; color: rgba(255, 255, 255, 1);}
-            5%   { opacity: 1; display: block; position: absolute; top: 26vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); box-shadow: 0px 25px 100px rgba(0, 0, 0, .99); color: rgba(255, 255, 255, 1); width: 50vw; height: 25px;}
-            95%  { opacity: 1; display: block; position: absolute; top: 26vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); box-shadow: 0px 25px 100px rgba(0, 0, 0, .99); color: rgba(255, 255, 255, 1); width: 50vw; height: 25px;}
-            100% { opacity: 1; color: rgba(0, 0, 0, 0.00); position: relative; }
+            0%   { opacity: 1; color: rgba(255, 255, 255, 1); z-index: 4;}
+            5%   { opacity: 1; display: block; position: absolute; top: 26vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); color: rgba(255, 255, 255, 1); width: 50vw; height: 25px; z-index: 4;}
+            95%  { opacity: 1; display: block; position: absolute; top: 26vh; right: 25vw; background-color: rgba(${imageArray[imageNumber]+',.97'}); color: rgba(255, 255, 255, 1); width: 50vw; height: 25px; z-index: 4;}
+            100% { opacity: 1; color: rgba(0, 0, 0, 0.00); position: relative; z-index: 4;}
           }
 
           .projectTechnologiesUsed {
