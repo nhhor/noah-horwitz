@@ -19,25 +19,20 @@ function Home(){
 
         <div className='what'>
           <h3>What I know today:</h3>
-          <ul>
-            <li><img className='icon' src='icon_JavaScript.png' alt='JavaScript Icon'/>JavaScript</li>
-            <ul>
-              <li><img className='icon' src='icon_React.png' alt='React Icon'/>React</li>
-              <li><img className='icon' src='icon_Redux.png' alt='Redux Icon'/>Redux</li>
-              <li><img className='icon' src='icon_jQuery.png' alt='jQuery Icon'/>jQuery</li>
-            </ul>
-            <li><img className='icon' src='icon_Ruby.png' alt='Ruby Icon'/>Ruby</li>
-            <ul>
-              <li><img className='icon' src='icon_Rails.png' alt='Rails Icon'/>Rails</li>
-            </ul>
-            <li><img className='icon' src='icon_PostgreSQL.png' alt='pSQL Icon'/>pSQL</li>
-          </ul>
-          <h3>What I hope to learn next:</h3>
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li><em>What your team <br/>needs the most.</em></li>
-            </ul>
+
+
+          <div className='whatList'>
+            <div className='whatItem'><img className='icon' src='icon_JavaScript.png' alt='JavaScript Icon'/>JavaScript</div>
+            <div className='whatItem'><img className='icon' src='icon_React.png' alt='React Icon'/>React</div>
+            <div className='whatItem'><img className='icon' src='icon_Redux.png' alt='Redux Icon'/>Redux</div>
+            <div className='whatItem'><img className='icon' src='icon_jQuery.png' alt='jQuery Icon'/>jQuery</div>
+            <div className='whatItem'><img className='icon' src='icon_Ruby.png' alt='Ruby Icon'/>Ruby</div>
+            <div className='whatItem'><img className='icon' src='icon_Rails.png' alt='Rails Icon'/>Rails</div>
+            <div className='whatItem'><img className='icon' src='icon_PostgreSQL.png' alt='pSQL Icon'/>pSQL</div>
+            <div className='whatItem'><img className='icon' src='icon_html5.png' alt='html5 Icon'/>HTML5</div>
+            <div className='whatItem'><img className='icon' src='icon_css.png' alt='css Icon'/>CSS3</div>
+          </div>
+
         </div>
 
         <div className='where'>
@@ -63,7 +58,9 @@ function Home(){
 
       <style>{`
           .icon {
-            max-width: 10%;
+            width: 50%;
+            max-width: 70px;
+
             margin-right: 10px;
             border-radius: 25%;
           }
@@ -89,6 +86,22 @@ function Home(){
             border-radius: 1vw;
             background-color: rgba(${imageArray[imageNumber]+',.09'});
             box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+          }
+
+          .whatList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-end;
+            align-content: flex-start;
+          }
+
+          .whatItem {
+            flex: 1 1 150px;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 20px;
+
           }
 
           .what > ul {
@@ -132,10 +145,21 @@ function Home(){
           }
 
           .Home-index {
-            background: rgba(${imageArray[imageNumber]+',.0'});
-            background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.0'}) 1%, rgba(${imageArray[imageNumber]+',.0'}) 99%, rgba(255,0,0,0.33) 100%);
+
+            background-image: url('PaN_I-Bg_${imageNumber}.png');
+
+            background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.0'}) 19%, rgba(${imageArray[imageNumber]+',.0'}) 99%, rgba(255,0,0,0.33) 100%);
+
+            background-image: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.0'}) 19vw, rgba(${imageArray[imageNumber]+',.0'}) 99%, rgba(255,0,0,0.33) 100%), url('PaN_I-Bg_${imageNumber}.png');
+
+            background-size: contain;
+            background-repeat: no-repeat;
+
             border-radius: 5%;
-            padding: 2vh;
+            padding-top: 19vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-bottom: 2vw;
             min-height: 86vh;
             animation: div_animation_effect 2s 1;
           }

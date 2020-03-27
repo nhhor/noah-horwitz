@@ -11,6 +11,7 @@ function Header(){
     <div className="Header-body">
 
       <div className="Header-padding"></div>
+      <div className="Header-padding"></div>
       <div className="name">Noah Horwitz</div>
       <div className="name"><Link to="/">Home</Link> | <Link to="/portfolio">Portfolio</Link> | <Link to="/resume">Resume</Link></div>
       <div className="Header-padding"></div>
