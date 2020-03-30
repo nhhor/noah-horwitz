@@ -33,7 +33,7 @@ function App() {
           .App {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 7% 1fr 3%;
+            grid-template-rows: 60px 1fr 25px;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
             width: 100vw;

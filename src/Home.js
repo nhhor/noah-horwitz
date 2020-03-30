@@ -70,7 +70,7 @@ function Home(){
             flex: 1 1 400px;
             // max-width: 600px;
             border-radius: 1vw;
-            margin: 1%;
+            margin: 10px;
             padding: 10px;
             border-radius: 1vw;
             background-color: rgba(${imageArray[imageNumber]+',.09'});
@@ -81,7 +81,7 @@ function Home(){
             flex: 2 1 400px;
             // max-width: 400px;
             border-radius: 1vw;
-            margin: 1%;
+            margin: 10px;
             padding: 10px;
             border-radius: 1vw;
             background-color: rgba(${imageArray[imageNumber]+',.09'});
@@ -114,7 +114,7 @@ function Home(){
             flex: 1 1 400px;
             // max-width: 600px;
             border-radius: 1vw;
-            margin: 1%;
+            margin: 10px;
             padding: 10px;
             border-radius: 1vw;
             background-color: rgba(${imageArray[imageNumber]+',.09'});
@@ -125,7 +125,7 @@ function Home(){
             flex: 2 1 400px;
             max-width: 100%;
             border-radius: 1vw;
-            margin: 1%;
+            margin: 10px;
             padding: 10px;
             border-radius: 1vw;
             background-color: rgba(${imageArray[imageNumber]+',.09'});

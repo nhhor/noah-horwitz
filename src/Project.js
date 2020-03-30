@@ -39,7 +39,7 @@ function Project(props){
             flex: 1 1 400px;
             max-width: 600px;
             border-radius: 1vw;
-            margin: 1%;
+            margin: 10px;
           }
 
           .Portfolio-project {

@@ -1,6 +1,14 @@
 html,body {
     height:100%;
     background-color: hsla(360, 100%, 75%, 0.03);
+    /* font-size: calc(16px + (24-16)*(100vw-400px)/(800-400)); */
+}
+
+html {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+    font-size: calc( 10px + (16 - 10) * (100vw - 400px) / (1200 - 400) );
+    /* font-size: min(max(16px, 4vw), 22px); */
+    /* font-size: calc(12px + 6 * ((100vw - 320px) / 680)); */
 }
 
 .App {
@@ -26,7 +34,7 @@ html,body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
