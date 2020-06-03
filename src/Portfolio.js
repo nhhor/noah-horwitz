@@ -9,7 +9,7 @@ class Portfolio extends React.Component {
     this.state = {
       projectList: [{
         id: 0,
-        name: 'Prioritacts',
+        name: 'test',
         description: "A web-app that securely & seamlessly connects with your Google Contacts, allows a user to set a desired frequency which they wish to communicate with a contact, then a user can log their most recent interaction, and sort the user's contacts by priority since last interaction.",
         picPreview: 'prioritactsPreview.png',
         picHover: 'https://raw.githubusercontent.com/nhhor/prioritacts/master/public/appExample.gif',
@@ -20,6 +20,17 @@ class Portfolio extends React.Component {
       },
       {
         id: 1,
+        name: 'Prioritacts',
+        description: "A web-app that securely & seamlessly connects with your Google Contacts, allows a user to set a desired frequency which they wish to communicate with a contact, then a user can log their most recent interaction, and sort the user's contacts by priority since last interaction.",
+        picPreview: 'prioritactsPreview.png',
+        picHover: 'https://raw.githubusercontent.com/nhhor/prioritacts/master/public/appExample.gif',
+        technologiesUsed: ['React', 'Redux', 'OAuth', 'JavaScript'],
+        modifiedLast: '2020-03-20',
+        linkGitHub: 'https://github.com/nhhor/prioritacts',
+        linkDeployed: 'https://prioritacts.netlify.com/',
+      },
+      {
+        id: 2,
         name: 'Neighborly',
         description: "The project is designed to allow neighbors within a community (as defined by a radius within a user's home zip-code area) to host or join events in their immediate area. [Team project]",
         picPreview: 'neighborlyPreview.png',
@@ -30,7 +41,7 @@ class Portfolio extends React.Component {
         linkDeployed: 'https://team-neighborly.herokuapp.com/',
       },
       {
-        id: 2,
+        id: 3,
         name: 'Code Invaders',
         description: 'Game designed to practice typing common code elements through an interactive space-themed setting. [Team project]',
         picPreview: 'codeInvedersPreview.png',
@@ -41,7 +52,7 @@ class Portfolio extends React.Component {
         linkDeployed: 'https://nhhor.github.io/code-invaders/',
       },
       {
-        id: 3,
+        id: 4,
         name: 'React Tap Room',
         description: 'The project is designed to create a tap room app in React where a bar or kombucha store can track their kegs.',
         picPreview: 'reactTapRoomPreview.png',
@@ -52,7 +63,7 @@ class Portfolio extends React.Component {
         linkDeployed: 'https://nhhor.github.io/react-tap-room/index.html',
       },
       {
-        id: 4,
+        id: 5,
         name: 'Pandemic',
         description: 'A timed game that resembles some of the aspects of the popular board game, Pandemic.',
         picPreview: 'pandemicPreview.png',
@@ -69,6 +80,9 @@ class Portfolio extends React.Component {
   render() {
     let imageArray = ['51, 17, 17', '51, 45, 17', '19, 14, 35', '14, 41, 14'];
     let imageNumber = (Math.round(Math.random()*3));
+
+    let backgroundColorArray = ['27, 26, 32, .99', '23, 18, 17, .99', '0, 0, 0, .99', '15, 12, 14, .99'];
+    let randomNumber = (Math.round(Math.random()*3));
 
     return (
       <div className='Portfolio-body'>
@@ -99,6 +113,9 @@ class Portfolio extends React.Component {
 
         </div>
 
+        <br/>
+        <br/>
+
         <style>{`
             .projectName{
               padding: 10px;
@@ -109,26 +126,27 @@ class Portfolio extends React.Component {
               border-top-left-radius: 1vw;
               background-color: rgba(64,64,255,0.99);
               overflow: hidden;
-              animation: projectName_animation_effect 2s 2;
             }
 
 
 
-          .contact {
-            flex: 1 1 400px;
-            max-width: 600px;
-            border-radius: 1vw;
-            margin: 10px;
-            background-color: rgba(${imageArray[imageNumber]+',.33'});
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
-          }
+            .contact {
+              flex: 1 1 400px;
+              max-width: 600px;
+              border-radius: 1vw;
+              margin: 10px;
+              background-color: rgba(${imageArray[imageNumber]+',.33'});
+              box-shadow: 10px 10px 10px rgba(0, 0, 0, .33);
+            }
 
             .Portfolio-body {
               background: rgba(${imageArray[imageNumber]+',.00'});
-              background: linear-gradient(180deg, rgba(0,0,255,0.33) 0%, rgba(${imageArray[imageNumber]+',.00'}) 1%, rgba(${imageArray[imageNumber]+',.00'}) 99%, rgba(255,0,0,0.33) 100%);
-              border-radius: 5%;
-              padding: 2vh;
-              min-height: 86vh;
+              background: linear-gradient(180deg, rgba(${backgroundColorArray[randomNumber]}) 0%, rgba(${imageArray[imageNumber]+',.00'}) 1%, rgba(${imageArray[imageNumber]+',.00'}) 99%, rgba(${backgroundColorArray[randomNumber]}) 100%);
+
+              min-height: 100%;
+              padding: 0vh 5vw;
+              overflow: hidden;
+
               animation: div_animation_effect 2s 1;
             }
 

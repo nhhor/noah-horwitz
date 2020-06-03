@@ -15,7 +15,7 @@ function Project(props){
         </div>
         <div></div>
         <div></div>
-        <div className='projectTechnologiesUsed'>Technologies Used: {props.technologiesUsed}</div>
+        {/*<div className='projectTechnologiesUsed'>Technologies Used: {props.technologiesUsed}</div>*/}
         <div className='projectLinkGitHub'>
           <a className='projectPill' href={props.linkGitHub}>GitHub Repository</a>
           <a className='projectPill' href={props.linkDeployed}>Deployed</a>
@@ -104,7 +104,7 @@ function Project(props){
             border-top-left-radius: 1vw;
             background-color: rgba(64,64,255,0.99);
             overflow: hidden;
-            animation: projectName_animation_effect ${(props.id+1)}s 2;
+            animation: projectName_animation_effect 2s ${(props.id+1)+'s'} 3;
           }
 
           @keyframes projectName_animation_effect {
