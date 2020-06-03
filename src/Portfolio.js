@@ -9,12 +9,12 @@ class Portfolio extends React.Component {
     this.state = {
       projectList: [{
         id: 0,
-        name: 'test',
+        name: 'SimplePNL',
         description: "A web-app that securely & seamlessly connects with your Google Contacts, allows a user to set a desired frequency which they wish to communicate with a contact, then a user can log their most recent interaction, and sort the user's contacts by priority since last interaction.",
         picPreview: 'prioritactsPreview.png',
         picHover: 'https://raw.githubusercontent.com/nhhor/prioritacts/master/public/appExample.gif',
         technologiesUsed: ['React', 'Redux', 'OAuth', 'JavaScript'],
-        modifiedLast: '2020-03-20',
+        modifiedLast: '2020-06-01',
         linkGitHub: 'https://github.com/nhhor/prioritacts',
         linkDeployed: 'https://prioritacts.netlify.com/',
       },
